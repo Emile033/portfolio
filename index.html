@@ -84,9 +84,26 @@
 
         <section id="contact" class="contact">
             <h2>Contact</h2>
-            <p>Heb je een vraag of wil je iets weten over een van mijn projecten?<br>Je kunt contact met mij opnemen via e-mail.</p>
-            <p class="email">jouwnaam@voorbeeld.nl</p>
-            <small>Dit is nog een voorbeeldadres.</small>
+            <p>Heb je een vraag of wil je iets weten over een van mijn projecten? Vul het formulier in en ik neem contact met je op.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam" name="naam" placeholder="Je naam" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" placeholder="je@email.nl" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht" name="bericht" rows="5" placeholder="Je bericht..." required></textarea>
+                </div>
+                
+                <button type="submit" class="button">Verstuur bericht</button>
+            </form>
         </section>
     </main>
 
